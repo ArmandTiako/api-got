@@ -1,0 +1,34 @@
+.form-inputs p {
+    color: red;
+}
+
+.form-content {
+    width: 450px;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.438);
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	gap: 1rem;
+	justify-content: center;
+}
+
+label {
+	display: flex;
+	flex-direction: column;
+	font-size: 0.8rem;
+	gap: 0.25rem;
+}
+
+input {
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background-color: transparent;
+	padding: 0.55rem;
+	color: white;
+	border-radius: 4px;
+	outline: none;
+	font-size: 0.85rem;
+}

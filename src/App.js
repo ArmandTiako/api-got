@@ -12,7 +12,7 @@ const MyRoutes = () => {
     { path: "/count"  , element: <Count />},
     { path: "/login" , element: <Login />},
     { path: "/register" , element: <Register />},
-    { path: "/books" , element: <Book /> }
+    { path: "/books" , element: <Book /> },
   ])
 }
 
