@@ -10,7 +10,6 @@ const MyRoutes = () => {
   return useRoutes([
     { path: "/" , element: <Login/>},
     { path: "/count"  , element: <Count />},
-    { path: "/login" , element: <Login />},
     { path: "/register" , element: <Register />},
     { path: "/books" , element: <Book /> },
   ])
