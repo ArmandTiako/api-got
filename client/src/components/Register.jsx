@@ -1,5 +1,5 @@
 import React , {useState, useEffect} from 'react';
-import './../styles/RegisterForm.css';
+import '../styles/RegisterForm.css';
 
 const Register = () => {
     //const [users, setUsers] = useState();
