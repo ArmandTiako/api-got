@@ -15,4 +15,4 @@ const Schema = mongoose.Schema
     ]
 })
 
-export const authorModel =mongoose.model("Authors", authorSchema)
+export const Author =mongoose.model("Authors", authorSchema)

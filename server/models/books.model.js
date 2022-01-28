@@ -9,7 +9,7 @@ const bookSchema = new Schema({
     },
     publication_date: {
         type: Date,
-        required: true
+        required: false
     },
     numbers_of_page: {
         type: Number,

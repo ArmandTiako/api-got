@@ -1,12 +1,10 @@
 import express from "express";
-import {createAuthor, findOneAuthor} from "../controllers/authors/authorscontrollers.js";
+import { createAuthor } from "../controllers/authors/create-author.controller.js";
 const router = express.Router()
 
 
 router.post("/author/create", createAuthor)
-router.get('/author/:id', findOneAuthor )
 
 
-export {
 
-}
+export { router }
