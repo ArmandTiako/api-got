@@ -4,6 +4,7 @@ import { Author } from "../../models/author.model.js";
 // Creating a new author into a controller
 export const createAuthor = async (req, res) => {
   const { name, books } = req.body;
+  console.log(req);
   try {
     let newAuthor = await Author.create({ name, books });
     res.status(201).json({
