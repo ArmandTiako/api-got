@@ -1,26 +1,35 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+"use strict";
+import mongoose from "mongoose";
+const Schema = mongoose.Schema;
 
+const bookSchema = new Schema(
+    {
+        title: {
+            type: String,
+            required: true,
+        },
+        category: {
+            type: String,
+            required: true,
+        },
+        publication_date: {
+            type: Date,
+            default: Date.now,
+        },
+        number_of_pages: {
+            type: Number,
+            required: true,
+        },
+        authors: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: "Authors",
+            },
+        ],
+    },
+    {
+        timestamps: true,
+    }
+);
 
-const bookSchema = new Schema({
-    title: {
-        type: String,
-        required: true,
-    },
-    publication_date: {
-        type: Date,
-        required: false
-    },
-    numbers_of_page: {
-        type: Number,
-        required: true
-    },
-    authors: [
-        {
-            type: Schema.Types.ObjectId,
-            ref: "Authors"
-        }
-    ]
-})
-
-export default mongoose.model('Books', bookSchema)
+export const Books = mongoose.model("Books", bookSchema);
