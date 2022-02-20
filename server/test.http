@@ -1,11 +1,9 @@
 
-POST http://localhost:5000/api/author/create HTTP/1.1
+POST http://localhost:5000/api/user/signup HTTP/1.1
 content-type: application/json
 
 {
-    "name": "Goku"
+    "username": "Maman",
+    "email": "maman@maman.fr",
+    "password": "maohdub"
 }
-
-
-
-
